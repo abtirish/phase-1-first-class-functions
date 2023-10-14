@@ -14,24 +14,25 @@ console.log(receivesAFunction(callback))
 
 
 function returnsANamedFunction() {
+    console.log(twoCallBack());
     return twoCallBack;
 };
 
 function twoCallBack(parameterHere) {
-
     console.log (parameterHere)
+
 }
+ //console.log(twoCallBack("henlo"))
+console.log(returnsANamedFunction())
 
-console.log(returnsANamedFunction("write this!"))
 
 
-
-let anonFxn = function () {
+let anonFxn = function() {
     console.log("the ACTUAL value of anonymous fxn");
 };
 
 
-//console.log(anonFxn);
+console.log(anonFxn);
 
 function returnsAnAnonymousFunction() {
     return function () {
